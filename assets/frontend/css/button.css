@@ -1,0 +1,175 @@
+/**
+ * Edge Button Widget Styles
+ */
+
+.edge-button-widget {
+    font-family: "Inter", sans-serif;
+    display: block;
+    width: 100%;
+}
+
+.edge-button-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.edge-button-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* Rings */
+.edge-button-ring-2,
+.edge-button-ring-1,
+.edge-button-inner {
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Outer Ring 2 - Largest */
+.edge-button-ring-2 {
+    width: 160px;
+    height: 160px;
+    background: rgba(102, 36, 227, 0.15);
+    z-index: 1;
+}
+
+/* Middle Ring 1 */
+.edge-button-ring-1 {
+    width: 120px;
+    height: 120px;
+    background: rgba(102, 36, 227, 0.3);
+    z-index: 2;
+}
+
+/* Inner Button */
+.edge-button-inner {
+    width: 80px;
+    height: 80px;
+    background: #6624E3;
+    z-index: 3;
+    box-shadow: 0 4px 20px rgba(102, 36, 227, 0.4);
+    transition: all 0.3s ease;
+}
+
+.edge-button-icon {
+    color: #ffffff;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.edge-button-icon svg {
+    width: 32px;
+    height: 32px;
+    fill: currentColor;
+}
+
+/* ========================================
+   Hover Animations
+   ======================================== */
+
+/* Scale Animation */
+.edge-button-container.hover-scale:hover .edge-button-inner {
+    transform: scale(1.1);
+    box-shadow: 0 6px 30px rgba(102, 36, 227, 0.6);
+}
+
+.edge-button-container.hover-scale:hover .edge-button-ring-1 {
+    transform: scale(1.05);
+}
+
+.edge-button-container.hover-scale:hover .edge-button-ring-2 {
+    transform: scale(1.05);
+}
+
+/* Rotate Animation */
+.edge-button-container.hover-rotate:hover .edge-button-icon {
+    transform: rotate(180deg);
+}
+
+/* Pulse Animation */
+.edge-button-container.hover-pulse:hover .edge-button-inner {
+    animation: pulse 0.6s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Ripple effect on rings */
+.edge-button-container:hover .edge-button-ring-1,
+.edge-button-container:hover .edge-button-ring-2 {
+    opacity: 0.8;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+@media (max-width: 768px) {
+    .edge-button-ring-2 {
+        width: 140px;
+        height: 140px;
+    }
+
+    .edge-button-ring-1 {
+        width: 105px;
+        height: 105px;
+    }
+
+    .edge-button-inner {
+        width: 70px;
+        height: 70px;
+    }
+
+    .edge-button-icon {
+        font-size: 28px;
+    }
+
+    .edge-button-icon svg {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .edge-button-ring-2 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .edge-button-ring-1 {
+        width: 90px;
+        height: 90px;
+    }
+
+    .edge-button-inner {
+        width: 60px;
+        height: 60px;
+    }
+
+    .edge-button-icon {
+        font-size: 24px;
+    }
+
+    .edge-button-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+}

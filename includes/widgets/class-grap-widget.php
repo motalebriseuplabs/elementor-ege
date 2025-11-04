@@ -201,49 +201,49 @@ class Grap_Widget extends Widget_Base {
 						'user_type_title' => 'Content Marketers',
 						'badge_color'     => 'purple',
 						'position_angle'  => array( 'size' => 0 ),
-						'position_radius' => array( 'size' => 305 ),
+						'position_radius' => array( 'size' => 340 ),
 					),
 					array(
 						'user_type_title' => 'Ecommerce Businesses',
 						'badge_color'     => 'pink',
 						'position_angle'  => array( 'size' => 210 ),
-						'position_radius' => array( 'size' => 305 ),
+						'position_radius' => array( 'size' => 340 ),
 					),
 					array(
 						'user_type_title' => 'Freelancers',
 						'badge_color'     => 'blue',
 						'position_angle'  => array( 'size' => 30 ),
-						'position_radius' => array( 'size' => 305 ),
+						'position_radius' => array( 'size' => 340 ),
 					),
 					array(
 						'user_type_title' => 'Founders & Entrepreneurs',
 						'badge_color'     => 'orange',
 						'position_angle'  => array( 'size' => 85 ),
-						'position_radius' => array( 'size' => 305 ),
+						'position_radius' => array( 'size' => 340 ),
 					),
 					array(
 						'user_type_title' => 'Beginners',
 						'badge_color'     => 'purple',
 						'position_angle'  => array( 'size' => 260 ),
-						'position_radius' => array( 'size' => 205 ),
+						'position_radius' => array( 'size' => 240 ),
 					),
 					array(
 						'user_type_title' => 'Agencies',
 						'badge_color'     => 'brown',
 						'position_angle'  => array( 'size' => 225 ),
-						'position_radius' => array( 'size' => 205 ),
+						'position_radius' => array( 'size' => 240 ),
 					),
 					array(
 						'user_type_title' => 'Content Writers',
 						'badge_color'     => 'green',
 						'position_angle'  => array( 'size' => 125 ),
-						'position_radius' => array( 'size' => 205 ),
+						'position_radius' => array( 'size' => 240 ),
 					),
 					array(
 						'user_type_title' => 'Bloggers',
 						'badge_color'     => 'blue',
 						'position_angle'  => array( 'size' => 180 ),
-						'position_radius' => array( 'size' => 245 ),
+						'position_radius' => array( 'size' => 280 ),
 					),
 				),
 				'title_field' => '{{{ user_type_title }}}',
@@ -423,11 +423,10 @@ class Grap_Widget extends Widget_Base {
 			<span class="orbit-dot orbit-dot-1 orbit-dot-green"></span>
 			<span class="orbit-dot orbit-dot-2 orbit-dot-red"></span>
 			<span class="orbit-dot orbit-dot-3 orbit-dot-orange"></span>
-			<span class="orbit-dot orbit-dot-4 orbit-dot-green"></span>
-			<span class="orbit-dot orbit-dot-5 orbit-dot-purple"></span>
-			<span class="orbit-dot orbit-dot-6 orbit-dot-blue"></span>
-			<span class="orbit-dot orbit-dot-7 orbit-dot-purple"></span>
-			<span class="orbit-dot orbit-dot-8 orbit-dot-purple"></span>
+			<span class="orbit-dot orbit-dot-4 orbit-dot-blue2"></span>
+			<span class="orbit-dot orbit-dot-5 orbit-dot-blue"></span>
+			<span class="orbit-dot orbit-dot-6 orbit-dot-purple"></span>
+			<span class="orbit-dot orbit-dot-8 orbit-dot-purple2"></span>
 		</div>
 
 		<!-- User Type Badges (white pills) -->

@@ -273,7 +273,6 @@ final class Elementor_edge {
 	 * @access private
 	 */
 	private function includes() {
-		require_once ELEMENTOR_edge_PATH . 'includes/class-bootstrap-helper.php';
 		require_once ELEMENTOR_edge_PATH . 'includes/class-plugin.php';
 	}
 

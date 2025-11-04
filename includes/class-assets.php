@@ -119,6 +119,17 @@ class Assets {
 			true
 		);
 
+		// Enqueue tab image widget script
+		$tab_image_script_path = ELEMENTOR_edge_ASSETS . 'frontend/js/tab-image.js';
+
+		wp_enqueue_script(
+			'elementor-edge-tab-image-widget',
+			$tab_image_script_path,
+			array( 'jquery', 'elementor-edge-frontend' ),
+			ELEMENTOR_edge_VERSION,
+			true
+		);
+
 		// Localize script
 		wp_localize_script(
 			'elementor-edge-frontend',
@@ -203,6 +214,26 @@ class Assets {
 		wp_enqueue_style(
 			'elementor-edge-grap',
 			$grap_style_path,
+			array( 'elementor-edge-frontend' ),
+			ELEMENTOR_edge_VERSION
+		);
+
+		// Enqueue tab image widget styles
+		$tab_image_style_path = ELEMENTOR_edge_ASSETS . 'frontend/css/tab-image.css';
+
+		wp_enqueue_style(
+			'elementor-edge-tab-image',
+			$tab_image_style_path,
+			array( 'elementor-edge-frontend' ),
+			ELEMENTOR_edge_VERSION
+		);
+
+		// Enqueue button widget styles
+		$button_style_path = ELEMENTOR_edge_ASSETS . 'frontend/css/button.css';
+
+		wp_enqueue_style(
+			'elementor-edge-button',
+			$button_style_path,
 			array( 'elementor-edge-frontend' ),
 			ELEMENTOR_edge_VERSION
 		);

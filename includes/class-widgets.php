@@ -56,6 +56,8 @@ class Widgets {
 		require_once ELEMENTOR_edge_PATH . 'includes/widgets/class-banner-widget.php';
 		require_once ELEMENTOR_edge_PATH . 'includes/widgets/class-workflow-widget.php';
 		require_once ELEMENTOR_edge_PATH . 'includes/widgets/class-grap-widget.php';
+		require_once ELEMENTOR_edge_PATH . 'includes/widgets/class-tab-image-widget.php';
+		require_once ELEMENTOR_edge_PATH . 'includes/widgets/class-button-widget.php';
 	}
 
 	/**
@@ -73,5 +75,11 @@ class Widgets {
 
 		// Circular Diagram Widget
 		$this->widgets_manager->register( new \Elementoredge\Widgets\Grap_Widget() );
+
+		// Tab Image Widget
+		$this->widgets_manager->register( new \Elementoredge\Widgets\Tab_Image_Widget() );
+
+		// Button Widget
+		$this->widgets_manager->register( new \Elementoredge\Widgets\Button_Widget() );
 	}
 }
