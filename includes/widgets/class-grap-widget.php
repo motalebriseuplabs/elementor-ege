@@ -201,49 +201,49 @@ class Grap_Widget extends Widget_Base {
 						'user_type_title' => 'Content Marketers',
 						'badge_color'     => 'purple',
 						'position_angle'  => array( 'size' => 0 ),
-						'position_radius' => array( 'size' => 310 ),
+						'position_radius' => array( 'size' => 305 ),
 					),
 					array(
 						'user_type_title' => 'Ecommerce Businesses',
 						'badge_color'     => 'pink',
-						'position_angle'  => array( 'size' => 180 ),
-						'position_radius' => array( 'size' => 310 ),
+						'position_angle'  => array( 'size' => 210 ),
+						'position_radius' => array( 'size' => 305 ),
 					),
 					array(
 						'user_type_title' => 'Freelancers',
 						'badge_color'     => 'blue',
-						'position_angle'  => array( 'size' => 55 ),
-						'position_radius' => array( 'size' => 310 ),
+						'position_angle'  => array( 'size' => 30 ),
+						'position_radius' => array( 'size' => 305 ),
 					),
 					array(
 						'user_type_title' => 'Founders & Entrepreneurs',
 						'badge_color'     => 'orange',
-						'position_angle'  => array( 'size' => 90 ),
-						'position_radius' => array( 'size' => 310 ),
+						'position_angle'  => array( 'size' => 85 ),
+						'position_radius' => array( 'size' => 305 ),
 					),
 					array(
 						'user_type_title' => 'Beginners',
 						'badge_color'     => 'purple',
-						'position_angle'  => array( 'size' => 265 ),
-						'position_radius' => array( 'size' => 210 ),
+						'position_angle'  => array( 'size' => 260 ),
+						'position_radius' => array( 'size' => 205 ),
 					),
 					array(
 						'user_type_title' => 'Agencies',
 						'badge_color'     => 'brown',
 						'position_angle'  => array( 'size' => 225 ),
-						'position_radius' => array( 'size' => 210 ),
+						'position_radius' => array( 'size' => 205 ),
 					),
 					array(
 						'user_type_title' => 'Content Writers',
 						'badge_color'     => 'green',
-						'position_angle'  => array( 'size' => 130 ),
-						'position_radius' => array( 'size' => 210 ),
+						'position_angle'  => array( 'size' => 125 ),
+						'position_radius' => array( 'size' => 205 ),
 					),
 					array(
 						'user_type_title' => 'Bloggers',
 						'badge_color'     => 'blue',
 						'position_angle'  => array( 'size' => 180 ),
-						'position_radius' => array( 'size' => 210 ),
+						'position_radius' => array( 'size' => 245 ),
 					),
 				),
 				'title_field' => '{{{ user_type_title }}}',
@@ -418,60 +418,16 @@ class Grap_Widget extends Widget_Base {
 			</div>
 		</div>
 
-		<?php
-				// Orbit dots positioned around the circles for visual balance.
-				$orbit_dots = array(
-					array(
-						'angle'  => 335,
-						'radius' => 150,
-						'color'  => 'purple',
-					),
-					array(
-						'angle'  => 28,
-						'radius' => 198,
-						'color'  => 'green',
-					),
-					array(
-						'angle'  => 75,
-						'radius' => 335,
-						'color'  => 'red',
-					),
-					array(
-						'angle'  => 85,
-						'radius' => 115,
-						'color'  => 'orange',
-					),
-					array(
-						'angle'  => 120,
-						'radius' => 260,
-						'color'  => 'green',
-					),
-					array(
-						'angle'  => 158,
-						'radius' => 335,
-						'color'  => 'purple',
-					),
-					array(
-						'angle'  => 230,
-						'radius' => 150,
-						'color'  => 'blue',
-					),
-					array(
-						'angle'  => 275,
-						'radius' => 115,
-						'color'  => 'purple',
-					),
-				);
-				?>
+		<!-- Orbit dots - positioned via CSS -->
 		<div class="orbit-dots">
-			<?php foreach ( $orbit_dots as $dot ) : ?>
-				<?php
-						$dot_x = $dot['radius'] * cos( deg2rad( $dot['angle'] - 90 ) );
-						$dot_y = $dot['radius'] * sin( deg2rad( $dot['angle'] - 90 ) );
-				?>
-			<span class="orbit-dot orbit-dot-<?php echo esc_attr( $dot['color'] ); ?>"
-				style="transform: translate(<?php echo $dot_x; ?>px, <?php echo $dot_y; ?>px);"></span>
-			<?php endforeach; ?>
+			<span class="orbit-dot orbit-dot-1 orbit-dot-green"></span>
+			<span class="orbit-dot orbit-dot-2 orbit-dot-red"></span>
+			<span class="orbit-dot orbit-dot-3 orbit-dot-orange"></span>
+			<span class="orbit-dot orbit-dot-4 orbit-dot-green"></span>
+			<span class="orbit-dot orbit-dot-5 orbit-dot-purple"></span>
+			<span class="orbit-dot orbit-dot-6 orbit-dot-blue"></span>
+			<span class="orbit-dot orbit-dot-7 orbit-dot-purple"></span>
+			<span class="orbit-dot orbit-dot-8 orbit-dot-purple"></span>
 		</div>
 
 		<!-- User Type Badges (white pills) -->
@@ -485,7 +441,7 @@ class Grap_Widget extends Widget_Base {
 					$color_class = ! empty( $user_type['badge_color'] ) ? 'badge-' . sanitize_html_class( $user_type['badge_color'] ) : 'badge-purple';
 				?>
 			<div class="user-badge <?php echo esc_attr( $color_class ); ?>"
-				style="--translate-x: <?php echo $x; ?>px; --translate-y: <?php echo $y; ?>px; transform: translate(<?php echo $x; ?>px, <?php echo $y; ?>px);">
+				style="--translate-x: <?php echo $x; ?>px; --translate-y: <?php echo $y; ?>px;">
 				<div class="badge-text"><?php echo esc_html( $user_type['user_type_title'] ); ?></div>
 			</div>
 			<?php endforeach; ?>
