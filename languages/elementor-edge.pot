@@ -1,0 +1,344 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025 Elementor edge
+# This file is distributed under the same license as the Elementor edge package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Elementor edge 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/elementor-edge\n"
+"POT-Creation-Date: 2025-11-02 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: elementor-edge\n"
+
+#. Plugin Name of the plugin
+msgid "Elementor edge"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://example.com/elementor-edge"
+msgstr ""
+
+#. Description of the plugin
+msgid "Professional Elementor widgets collection following WordPress.org standards. Advanced widgets for modern website building."
+msgstr ""
+
+#. Author of the plugin
+msgid "Your Name"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://example.com"
+msgstr ""
+
+#: elementor-edge.php:175
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
+msgstr ""
+
+#: elementor-edge.php:176
+#: elementor-edge.php:200
+#: elementor-edge.php:225
+#: includes/admin/class-admin.php:54
+#: includes/admin/class-admin.php:55
+#: includes/class-plugin.php:141
+msgid "Elementor edge"
+msgstr ""
+
+#: elementor-edge.php:177
+#: elementor-edge.php:201
+msgid "Elementor"
+msgstr ""
+
+#: elementor-edge.php:199
+#: elementor-edge.php:224
+#, php-format
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr ""
+
+#: elementor-edge.php:226
+msgid "PHP"
+msgstr ""
+
+#: elementor-edge.php:340
+#: includes/admin/class-admin.php:65
+#: includes/admin/class-admin.php:66
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/class-admin.php:74
+#: includes/admin/class-admin.php:75
+msgid "Widgets"
+msgstr ""
+
+#: includes/admin/class-admin.php:93
+msgid "General Settings"
+msgstr ""
+
+#: includes/admin/class-admin.php:100
+msgid "Enable Widgets"
+msgstr ""
+
+#: includes/admin/class-admin.php:137
+msgid "Elementor edge Widgets"
+msgstr ""
+
+#: includes/admin/class-admin.php:140
+#: includes/widgets/class-hello-widget.php:45
+msgid "Hello Widget"
+msgstr ""
+
+#: includes/admin/class-admin.php:141
+msgid "A simple gredgeting widget for testing."
+msgstr ""
+
+#: includes/admin/class-admin.php:144
+msgid "Team Member"
+msgstr ""
+
+#: includes/admin/class-admin.php:145
+msgid "Display team member information."
+msgstr ""
+
+#: includes/admin/class-admin.php:148
+msgid "Testimonial"
+msgstr ""
+
+#: includes/admin/class-admin.php:149
+msgid "Show customer testimonials."
+msgstr ""
+
+#: includes/admin/class-admin.php:152
+msgid "Pricing Table"
+msgstr ""
+
+#: includes/admin/class-admin.php:153
+msgid "Create beautiful pricing tables."
+msgstr ""
+
+#: includes/admin/class-admin.php:167
+msgid "Configure general plugin settings."
+msgstr ""
+
+#: includes/admin/class-admin.php:180
+msgid "Enable all Elementor edge widgets"
+msgstr ""
+
+#: includes/widgets/class-hello-widget.php:93
+msgid "Content"
+msgstr ""
+
+#: includes/widgets/class-hello-widget.php:101
+msgid "Title"
+msgstr ""
+
+#: includes/widgets/class-hello-widget.php:103
+msgid "Hello World"
+msgstr ""
+
+#: includes/widgets/class-hello-widget.php:104
+msgid "Type your title here"
+msgstr ""
+
+#: includes/widgets/class-hello-widget.php:111
+msgid "Description"
+msgstr ""
+
+#: includes/widgets/class-hello-widget.php:113
+msgid "Welcome to Elementor edge plugin!"
+msgstr ""
+
+#: includes/widgets/class-hello-widget.php:114
+msgid "Type your description here"
+msgstr ""
+
+#: includes/widgets/class-hello-widget.php:125
+msgid "Style"
+msgstr ""
+
+#: includes/widgets/class-hello-widget.php:133
+msgid "Title Color"
+msgstr ""
+
+#: includes/widgets/class-hello-widget.php:145
+msgid "Title Typography"
+msgstr ""
+
+#: includes/class-controls.php:105
+msgid "Posts"
+msgstr ""
+
+#: includes/class-controls.php:106
+msgid "Pages"
+msgstr ""
+
+#: includes/class-controls.php:107
+msgid "Custom Post Type"
+msgstr ""
+
+#: includes/class-controls.php:239
+#: includes/class-controls.php:285
+msgid "Linear"
+msgstr ""
+
+#: includes/class-controls.php:240
+#: includes/class-controls.php:286
+msgid "Radial"
+msgstr ""
+
+#: includes/class-controls.php:244
+msgid "Angle"
+msgstr ""
+
+#: includes/class-controls.php:249
+msgid "Colors"
+msgstr ""
+
+#: includes/class-controls.php:253
+msgid "Add Color"
+msgstr ""
+
+#: includes/class-plugin.php:149
+msgid "Elementor edge Pro"
+msgstr ""
+
+#: includes/class-assets.php:88
+msgid "Loading..."
+msgstr ""
+
+#: includes/class-assets.php:89
+msgid "Error"
+msgstr ""
+
+#: includes/class-assets.php:90
+msgid "Success"
+msgstr ""
+
+#: includes/class-assets.php:91
+msgid "Are you sure?"
+msgstr ""
+
+#: includes/class-assets.php:92
+msgid "Cancel"
+msgstr ""
+
+#: includes/class-assets.php:93
+msgid "Save"
+msgstr ""
+
+#: includes/class-assets.php:94
+msgid "Close"
+msgstr ""
+
+#: includes/class-assets.php:95
+msgid "Next"
+msgstr ""
+
+#: includes/class-assets.php:96
+msgid "Previous"
+msgstr ""
+
+#: includes/class-assets.php:97
+msgid "Search"
+msgstr ""
+
+#: includes/class-assets.php:98
+msgid "No results found"
+msgstr ""
+
+#: includes/class-assets.php:99
+msgid "Select an option"
+msgstr ""
+
+#: includes/class-assets.php:162
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: includes/class-assets.php:163
+msgid "Error saving settings. Please try again."
+msgstr ""
+
+#: includes/class-assets.php:164
+msgid "Are you sure you want to delete this item?"
+msgstr ""
+
+#: includes/class-assets.php:165
+msgid "Are you sure you want to reset all settings?"
+msgstr ""
+
+#: includes/class-assets.php:166
+msgid "Widget added successfully!"
+msgstr ""
+
+#: includes/class-assets.php:167
+msgid "Widget removed successfully!"
+msgstr ""
+
+#: includes/class-assets.php:168
+msgid "Please enter valid information."
+msgstr ""
+
+#: includes/class-assets.php:169
+msgid "Processing..."
+msgstr ""
+
+#: includes/class-assets.php:170
+msgid "Upload File"
+msgstr ""
+
+#: includes/class-assets.php:171
+msgid "Select Image"
+msgstr ""
+
+#: includes/class-assets.php:172
+msgid "Remove Image"
+msgstr ""
+
+#: includes/class-assets.php:226
+msgid "Elementor edge Widget"
+msgstr ""
+
+#: includes/class-assets.php:227
+msgid "Advanced widget for Elementor"
+msgstr ""
+
+#: includes/class-assets.php:228
+msgid "Content"
+msgstr ""
+
+#: includes/class-assets.php:229
+msgid "Style"
+msgstr ""
+
+#: includes/class-assets.php:230
+msgid "Advanced"
+msgstr ""
+
+#: includes/class-assets.php:231
+msgid "General"
+msgstr ""
+
+#: includes/class-assets.php:232
+msgid "Typography"
+msgstr ""
+
+#: includes/class-assets.php:233
+msgid "Spacing"
+msgstr ""
+
+#: includes/class-assets.php:234
+msgid "Border"
+msgstr ""
+
+#: includes/class-assets.php:235
+msgid "Background"
+msgstr ""

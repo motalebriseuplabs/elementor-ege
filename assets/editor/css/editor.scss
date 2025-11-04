@@ -1,0 +1,452 @@
+/**
+ * Editor SCSS for Elementor edge
+ *
+ * @package Elementoredge
+ * @since 1.0.0
+ */
+
+// Variables
+$primary-color: #007cba;
+$secondary-color: #495157;
+$text-color: #495157;
+$border-color: #d0d0d0;
+$background-color: #f9f9f9;
+$white: #fff;
+$notice-bg: #e7f3ff;
+$notice-border: #007cba;
+$notice-text: #007cba;
+
+// Dark mode variables
+$dark-border: #495157;
+$dark-background: #2c2d30;
+$dark-text: #a4afb7;
+$dark-notice-bg: #1a2b3d;
+$dark-notice-text: #7cc7f0;
+
+// Mixins
+@mixin loading-spinner($color: $primary-color) {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid $color;
+  border-radius: 50%;
+  animation: elementor-edge-spin 1s linear infinite;
+}
+
+@mixin control-group() {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: $background-color;
+
+  .group-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: $text-color;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
+
+// Elementor Editor Panel Styles
+.elementor-panel {
+  .elementor-edge-widget-panel {
+    background: $white;
+  }
+
+  // Dark mode support
+  &.elementor-panel-scheme-dark {
+    .elementor-edge-control-group {
+      border-color: $dark-border;
+      background: $dark-background;
+
+      .group-title {
+        color: $dark-text;
+      }
+    }
+
+    .elementor-edge-widget-notice {
+      background: $dark-notice-bg;
+      border-color: $primary-color;
+      color: $dark-notice-text;
+    }
+  }
+}
+
+// Widget Notices
+.elementor-edge-widget-notice {
+  background: $notice-bg;
+  border: 1px solid $notice-border;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: $notice-text;
+
+  .notice-icon {
+    margin-right: 5px;
+  }
+}
+
+// Custom Control Styles
+.elementor-control-type-elementor-edge-query {
+  .elementor-control-input-wrapper {
+    position: relative;
+  }
+}
+
+.elementor-edge-query-control {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    background: $white;
+    font-size: 12px;
+  }
+
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+}
+
+// Image Choose Control
+.elementor-edge-image-choose-control {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  .image-option {
+    position: relative;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+
+    &:hover {
+      border-color: $primary-color;
+    }
+
+    &.selected {
+      border-color: $primary-color;
+    }
+
+    img {
+      display: block;
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+    }
+  }
+}
+
+// Control Groups
+.elementor-edge-control-group {
+  @include control-group();
+}
+
+// Loading States
+.elementor-edge-loading {
+  position: relative;
+
+  &::after {
+    @include loading-spinner();
+  }
+}
+
+@keyframes elementor-edge-spin {
+  0% { transform: translateY(-50%) rotate(0deg); }
+  100% { transform: translateY(-50%) rotate(360deg); }
+}
+
+// Gradient Control
+.edge-gradient-picker {
+  .edge-gradient-preview {
+    width: 100%;
+    height: 40px;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #ff0000 0%, #0000ff 100%);
+  }
+
+  .edge-gradient-type {
+    margin-bottom: 10px;
+
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid $border-color;
+      border-radius: 3px;
+      background: $white;
+      font-size: 12px;
+    }
+  }
+
+  .edge-gradient-angle {
+    margin-bottom: 10px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 11px;
+      font-weight: 600;
+      color: $text-color;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    input[type="range"] {
+      width: calc(100% - 40px);
+      margin-right: 10px;
+    }
+
+    .angle-value {
+      font-size: 12px;
+      color: $text-color;
+      min-width: 30px;
+      display: inline-block;
+    }
+  }
+
+  .edge-gradient-colors {
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 11px;
+      font-weight: 600;
+      color: $text-color;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .color-stops {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid $border-color;
+      border-radius: 3px;
+      background: $white;
+      min-height: 40px;
+    }
+
+    .add-color-stop {
+      width: 100%;
+      padding: 8px;
+      background: $primary-color;
+      color: $white;
+      border: none;
+      border-radius: 3px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background: darken($primary-color, 10%);
+      }
+    }
+  }
+}
+
+// Widget Preview Enhancements
+.elementor-widget-elementor-edge-hello {
+  .elementor-widget-container {
+    position: relative;
+
+    &::before {
+      content: 'Elementor edge Widget';
+      position: absolute;
+      top: -20px;
+      left: 0;
+      font-size: 10px;
+      color: $primary-color;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      background: $white;
+      padding: 2px 6px;
+      border-radius: 2px;
+      border: 1px solid $primary-color;
+      z-index: 1;
+    }
+  }
+}
+
+// Control Tabs
+.elementor-edge-control-tabs {
+  .tabs-nav {
+    display: flex;
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 15px;
+
+    .tab-button {
+      padding: 8px 12px;
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      font-size: 11px;
+      font-weight: 600;
+      color: $text-color;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &:hover,
+      &.active {
+        color: $primary-color;
+        border-bottom-color: $primary-color;
+      }
+    }
+  }
+
+  .tab-content {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+// Color Picker Enhancements
+.edge-color-control {
+  .wp-picker-container {
+    .wp-color-result {
+      border-radius: 3px;
+      box-shadow: none;
+      border: 1px solid $border-color;
+
+      &:after {
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+// Range Control Enhancements
+.edge-range-control {
+  .range-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    input[type="range"] {
+      flex: 1;
+    }
+
+    .range-value {
+      min-width: 40px;
+      text-align: center;
+      font-size: 11px;
+      color: $text-color;
+      background: $background-color;
+      padding: 4px 8px;
+      border-radius: 3px;
+      border: 1px solid $border-color;
+    }
+  }
+}
+
+// Widget Icon Enhancements
+.elementor-element-wrapper {
+  .elementor-widget-elementor-edge-hello {
+    .elementor-widget-icon {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+}
+
+// Responsive Controls
+.elementor-edge-responsive-control {
+  .responsive-switchers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    overflow: hidden;
+
+    .responsive-switcher {
+      flex: 1;
+      padding: 6px;
+      background: $white;
+      border: none;
+      font-size: 10px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+
+      &:hover,
+      &.active {
+        background: $primary-color;
+        color: $white;
+      }
+
+      i {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+// Advanced Settings Panel
+.elementor-edge-advanced-panel {
+  .panel-header {
+    background: $background-color;
+    padding: 10px 15px;
+    margin: -15px -15px 15px -15px;
+    border-bottom: 1px solid $border-color;
+
+    h4 {
+      margin: 0;
+      font-size: 12px;
+      color: $text-color;
+      font-weight: 600;
+    }
+  }
+
+  .panel-content {
+    .setting-row {
+      display: flex;
+      justify-content: space-betwedgen;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid lighten($border-color, 5%);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .setting-label {
+        font-size: 11px;
+        color: $text-color;
+        font-weight: 500;
+      }
+
+      .setting-control {
+        input,
+        select {
+          font-size: 11px;
+          padding: 4px 6px;
+          border: 1px solid $border-color;
+          border-radius: 2px;
+          background: $white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+
+#eldg-banner {
+	padding-top: 120px
+}
+
+.eldg-banner-content {
+    max-width: 721px;
+    margin: 0 auto;
+}
+
+.eldg-banner-content .eldg-banner-sub-heading{
+	max-width: 394px;
+	height: 47px;
+	margin-bottom: 20px !important;
+	margin: 0 auto;
+	background-color: #6624E3;
+	opacity: 1;
+	border-radius: 40px;
+	border-width: 1px;
+}
+
+
+ .eldg-banner-content .eldg-banner-heading-tag{
+ 	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+	line-height: 45px;
+	letter-spacing: 0px;
+	vertical-align: middle;
+	text-transform: capitalize;
+
+}
+.eldg-banner-content .eldg-banner-heading {
+	font-family: "Inter", sans-serif;
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 75px;
+	letter-spacing: -2px;
+	text-align: center;
+    margin-bottom: 20px;
+}
+
+.eldg-banner-content .eldg-banner-heading span {
+    color: #6624E3;
+}
+
+#eldg-banner .eldg-banner-para {
+    margin-bottom: 46px !important;
+	font-family: "Inter", sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: 0px;
+}
+
+
+.eldg-banner-button {
+    padding-bottom: 45px;
+}
+.eldg-banner-button a {
+	font-family: "Inter", sans-serif;
+	background: linear-gradient(72.43deg, #6624E3 39.5%, #E46BE8 108.86%);
+    opacity: 1;
+    border-radius: 23px;
+    padding: 10px 42px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#eldg-banner .eldg-youtube {
+    max-width: 1094px;
+    margin: 0 auto;
+    padding: 10.37px;
+    border-radius: 35px;
+    background: linear-gradient(145deg, #E46BE8, #6624E3);
+    box-shadow: 3.89px 6.48px 32.42px 25.94px rgba(215, 164, 231, 0.5);
+}
+
+#eldg-banner .eldg-youtube iframe {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 25.94px;
+    border: none;
+    display: block;
+}
+
+/* Video Poster Styles */
+#eldg-banner .eldg-video-container {
+    position: relative;
+    width: 100%;
+    border-radius: 25.94px;
+    overflow: hidden;
+}
+
+#eldg-banner .eldg-video-poster {
+    position: relative;
+    width: 100%;
+    height: 651px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25.94px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+#eldg-banner .eldg-video-poster:hover {
+    transform: scale(1.02);
+}
+
+#eldg-banner .eldg-video-play-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+#eldg-banner .eldg-video-play-btn:hover {
+    transform: scale(1.1);
+}
+
+#eldg-banner .eldg-video-play-btn svg {
+    width: 80px;
+    height: 80px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #eldg-banner .eldg-video-poster {
+        height: 400px;
+    }
+
+    #eldg-banner .eldg-video-play-btn svg {
+        width: 60px;
+        height: 60px;
+    }
+}

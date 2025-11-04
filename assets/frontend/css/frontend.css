@@ -1,0 +1,899 @@
+/**
+ * Frontend CSS for Elementor edge Widgets
+ * Compiled from frontend.scss
+ *
+ * @package Elementoredge
+ * @since 1.0.0
+ */
+
+/* Variables compiled as CSS custom properties */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --edge-primary-color: #007cba;
+  --edge-primary-dark: #005a87;
+  --edge-text-dark: #333;
+  --edge-text-light: #666;
+  --edge-bg-light: #f8f9fa;
+  --edge-white: #fff;
+  --edge-border-color: #e9ecef;
+  --edge-border-light: #edgee;
+  --edge-shadow-light: rgba(0, 0, 0, 0.1);
+}
+
+
+/* Hello Widget */
+.elementor-edge-hello-widget {
+  padding: 20px;
+  text-align: center;
+  background: var(--edge-bg-light);
+  border-radius: 8px;
+  border: 1px solid var(--edge-border-color);
+}
+
+@media (max-width: 768px) {
+  .elementor-edge-hello-widget {
+    padding: 15px;
+  }
+}
+
+.elementor-edge-hello-widget .hello-title {
+  margin: 0 0 15px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--edge-text-dark);
+}
+
+@media (max-width: 768px) {
+  .elementor-edge-hello-widget .hello-title {
+    font-size: 20px;
+  }
+}
+
+.elementor-edge-hello-widget .hello-description {
+  margin: 0;
+  font-size: 16px;
+  color: var(--edge-text-light);
+  line-height: 1.6;
+}
+
+.elementor-edge-hello-widget .hello-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--edge-primary-color);
+  color: var(--edge-white);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.elementor-edge-hello-widget .hello-button:hover {
+  background: var(--edge-primary-dark);
+}
+
+/* Team Member Widget */
+.elementor-edge-team-member {
+  text-align: center;
+  background: var(--edge-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px var(--edge-shadow-light);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.elementor-edge-team-member:hover {
+  transform: translateY(-5px);
+}
+
+.elementor-edge-team-member .member-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .elementor-edge-team-member .member-image {
+    height: 200px;
+  }
+}
+
+.elementor-edge-team-member .member-content {
+  padding: 20px;
+}
+
+.elementor-edge-team-member .member-name {
+  margin: 0 0 5px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--edge-text-dark);
+}
+
+.elementor-edge-team-member .member-position {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  color: var(--edge-primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.elementor-edge-team-member .member-bio {
+  margin: 0;
+  font-size: 14px;
+  color: var(--edge-text-light);
+  line-height: 1.6;
+}
+
+.elementor-edge-team-member .member-social {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.elementor-edge-team-member .member-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: var(--edge-primary-color);
+  color: var(--edge-white);
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.elementor-edge-team-member .member-social a:hover {
+  background: var(--edge-primary-dark);
+}
+
+.elementor-edge-team-member .member-social a i {
+  font-size: 14px;
+}
+
+/* Testimonial Widget */
+.elementor-edge-testimonial {
+  position: relative;
+  background: var(--edge-white);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 10px var(--edge-shadow-light);
+}
+
+@media (max-width: 768px) {
+  .elementor-edge-testimonial {
+    padding: 20px;
+  }
+}
+
+.elementor-edge-testimonial::before {
+  content: '"';
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 60px;
+  color: var(--edge-primary-color);
+  line-height: 1;
+  font-family: serif;
+}
+
+@media (max-width: 768px) {
+  .elementor-edge-testimonial::before {
+    font-size: 40px;
+  }
+}
+
+.elementor-edge-testimonial .testimonial-content {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--edge-text-dark);
+  line-height: 1.6;
+}
+
+.elementor-edge-testimonial .testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .elementor-edge-testimonial .testimonial-author {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+.elementor-edge-testimonial .testimonial-author .author-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.elementor-edge-testimonial .testimonial-author .author-info .author-name {
+  margin: 0 0 2px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--edge-text-dark);
+}
+
+.elementor-edge-testimonial .testimonial-author .author-info .author-company {
+  margin: 0;
+  font-size: 12px;
+  color: var(--edge-text-light);
+}
+
+.elementor-edge-testimonial .testimonial-rating {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.elementor-edge-testimonial .testimonial-rating .stars {
+  color: #ffc107;
+  font-size: 16px;
+}
+
+.elementor-edge-testimonial .testimonial-rating .stars i {
+  margin-right: 2px;
+}
+
+/* Pricing Table Widget */
+.elementor-edge-pricing-table {
+  background: var(--edge-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px var(--edge-shadow-light);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.elementor-edge-pricing-table:hover {
+  transform: translateY(-5px);
+}
+
+.elementor-edge-pricing-table.featured {
+  border: 2px solid var(--edge-primary-color);
+  transform: scale(1.05);
+}
+
+.elementor-edge-pricing-table.featured .price-header {
+  background: linear-gradient(135deg, var(--edge-primary-color), var(--edge-primary-dark));
+}
+
+.elementor-edge-pricing-table .price-header {
+  background: var(--edge-primary-color);
+  color: var(--edge-white);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.elementor-edge-pricing-table .price-header .plan-name {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.elementor-edge-pricing-table .price-header .plan-price {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .elementor-edge-pricing-table .price-header .plan-price {
+    font-size: 36px;
+  }
+}
+
+.elementor-edge-pricing-table .price-header .plan-price .currency {
+  font-size: 24px;
+  vertical-align: top;
+}
+
+.elementor-edge-pricing-table .price-header .plan-price .period {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.elementor-edge-pricing-table .price-features {
+  padding: 30px 20px;
+}
+
+.elementor-edge-pricing-table .price-features .features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.elementor-edge-pricing-table .price-features .features-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--edge-border-light);
+  color: var(--edge-text-light);
+  font-size: 14px;
+  position: relative;
+}
+
+.elementor-edge-pricing-table .price-features .features-list li:last-child {
+  border-bottom: none;
+}
+
+.elementor-edge-pricing-table .price-features .features-list li.included::before {
+  content: '✓';
+  color: #28a745;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.elementor-edge-pricing-table .price-features .features-list li.not-included::before {
+  content: '✗';
+  color: #dc3545;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.elementor-edge-pricing-table .price-button {
+  padding: 20px;
+  text-align: center;
+  background: var(--edge-bg-light);
+}
+
+.elementor-edge-pricing-table .price-button .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--edge-primary-color);
+  color: var(--edge-white);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.elementor-edge-pricing-table .price-button .btn:hover {
+  background: var(--edge-primary-dark);
+}
+
+/* Progress Bar Widget */
+.elementor-edge-progress-bar {
+  margin: 20px 0;
+}
+
+.elementor-edge-progress-bar .progress-label {
+  display: flex;
+  justify-content: space-betwedgen;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--edge-text-dark);
+}
+
+.elementor-edge-progress-bar .progress-track {
+  width: 100%;
+  height: 8px;
+  background: var(--edge-border-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.elementor-edge-progress-bar .progress-track .progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--edge-primary-color), var(--edge-primary-dark));
+  border-radius: 4px;
+  transition: width 1.5s ease-in-out;
+  position: relative;
+}
+
+.elementor-edge-progress-bar .progress-track .progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shimmer 2s infinite;
+}
+
+.elementor-edge-progress-bar.animated .progress-fill {
+  animation: progress-grow 1.5s ease-in-out;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes progress-grow {
+  0% { width: 0%; }
+}
+
+/* Counter Widget */
+.elementor-edge-counter {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.elementor-edge-counter .counter-icon {
+  margin-bottom: 20px;
+}
+
+.elementor-edge-counter .counter-icon i {
+  font-size: 48px;
+  color: var(--edge-primary-color);
+}
+
+.elementor-edge-counter .counter-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--edge-text-dark);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .elementor-edge-counter .counter-number {
+    font-size: 36px;
+  }
+}
+
+.elementor-edge-counter .counter-title {
+  font-size: 16px;
+  color: var(--edge-text-light);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Animation Classes */
+.edge-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.edge-animate.edge-animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.edge-animate.edge-animated.fadeInUp {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.edge-animate.edge-animated.fadeInLeft {
+  animation: fadeInLeft 0.6s ease forwards;
+}
+
+.edge-animate.edge-animated.fadeInRight {
+  animation: fadeInRight 0.6s ease forwards;
+}
+
+.edge-animate.edge-animated.zoomIn {
+  animation: zoomIn 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Utility Classes */
+.edge-text-center { text-align: center; }
+.edge-text-left { text-align: left; }
+.edge-text-right { text-align: right; }
+
+.edge-mb-0 { margin-bottom: 0; }
+.edge-mb-1 { margin-bottom: 10px; }
+.edge-mb-2 { margin-bottom: 20px; }
+.edge-mb-3 { margin-bottom: 30px; }
+
+.edge-mt-0 { margin-top: 0; }
+.edge-mt-1 { margin-top: 10px; }
+.edge-mt-2 { margin-top: 20px; }
+.edge-mt-3 { margin-top: 30px; }
+
+/* Team Member Widget */
+.elementor-edge-team-member {
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.elementor-edge-team-member:hover {
+  transform: translateY(-5px);
+}
+
+.elementor-edge-team-member .member-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .elementor-edge-team-member .member-image {
+    height: 200px;
+  }
+}
+
+.elementor-edge-team-member .member-content {
+  padding: 20px;
+}
+
+.elementor-edge-team-member .member-name {
+  margin: 0 0 5px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.elementor-edge-team-member .member-position {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  color: #007cba;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.elementor-edge-team-member .member-bio {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.elementor-edge-team-member .member-social {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.elementor-edge-team-member .member-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: #007cba;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.elementor-edge-team-member .member-social a:hover {
+  background: #005a87;
+}
+
+.elementor-edge-team-member .member-social a i {
+  font-size: 14px;
+}
+
+/* Testimonial Widget */
+.elementor-edge-testimonial {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .elementor-edge-testimonial {
+    padding: 20px;
+  }
+}
+
+.elementor-edge-testimonial::before {
+  content: '"';
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 60px;
+  color: #007cba;
+  line-height: 1;
+  font-family: serif;
+}
+
+@media (max-width: 768px) {
+  .elementor-edge-testimonial::before {
+    font-size: 40px;
+  }
+}
+
+.elementor-edge-testimonial .testimonial-content {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-style: italic;
+  color: #333;
+  line-height: 1.6;
+}
+
+.elementor-edge-testimonial .testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .elementor-edge-testimonial .testimonial-author {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+.elementor-edge-testimonial .testimonial-author .author-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.elementor-edge-testimonial .testimonial-author .author-info .author-name {
+  margin: 0 0 2px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.elementor-edge-testimonial .testimonial-author .author-info .author-company {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.elementor-edge-testimonial .testimonial-rating {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.elementor-edge-testimonial .testimonial-rating .stars {
+  color: #ffc107;
+  font-size: 16px;
+}
+
+.elementor-edge-testimonial .testimonial-rating .stars i {
+  margin-right: 2px;
+}
+
+/* Progress Bar Widget */
+.elementor-edge-progress-bar {
+  margin: 20px 0;
+}
+
+.elementor-edge-progress-bar .progress-label {
+  display: flex;
+  justify-content: space-betwedgen;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.elementor-edge-progress-bar .progress-track {
+  width: 100%;
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.elementor-edge-progress-bar .progress-track .progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #007cba, #005a87);
+  border-radius: 4px;
+  transition: width 1.5s ease-in-out;
+  position: relative;
+}
+
+.elementor-edge-progress-bar .progress-track .progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shimmer 2s infinite;
+}
+
+.elementor-edge-progress-bar.animated .progress-fill {
+  animation: progress-grow 1.5s ease-in-out;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes progress-grow {
+  0% { width: 0%; }
+}
+
+/* Counter Widget */
+.elementor-edge-counter {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.elementor-edge-counter .counter-icon {
+  margin-bottom: 20px;
+}
+
+.elementor-edge-counter .counter-icon i {
+  font-size: 48px;
+  color: #007cba;
+}
+
+.elementor-edge-counter .counter-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .elementor-edge-counter .counter-number {
+    font-size: 36px;
+  }
+}
+
+.elementor-edge-counter .counter-title {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Animation Classes */
+.edge-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.edge-animate.edge-animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.edge-animate.edge-animated.fadeInUp {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.edge-animate.edge-animated.fadeInLeft {
+  animation: fadeInLeft 0.6s ease forwards;
+}
+
+.edge-animate.edge-animated.fadeInRight {
+  animation: fadeInRight 0.6s ease forwards;
+}
+
+.edge-animate.edge-animated.zoomIn {
+  animation: zoomIn 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Utility Classes */
+.edge-text-center { text-align: center; }
+.edge-text-left { text-align: left; }
+.edge-text-right { text-align: right; }
+
+.edge-mb-0 { margin-bottom: 0; }
+.edge-mb-1 { margin-bottom: 10px; }
+.edge-mb-2 { margin-bottom: 20px; }
+.edge-mb-3 { margin-bottom: 30px; }
+
+.edge-mt-0 { margin-top: 0; }
+.edge-mt-1 { margin-top: 10px; }
+.edge-mt-2 { margin-top: 20px; }
+.edge-mt-3 { margin-top: 30px; }
