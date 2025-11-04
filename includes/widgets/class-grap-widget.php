@@ -200,50 +200,50 @@ class Grap_Widget extends Widget_Base {
 					array(
 						'user_type_title' => 'Content Marketers',
 						'badge_color'     => 'purple',
-						'position_angle'  => array( 'size' => 350 ),
-						'position_radius' => array( 'size' => 260 ),
-					),
-					array(
-						'user_type_title' => 'Freelancers',
-						'badge_color'     => 'blue',
-						'position_angle'  => array( 'size' => 40 ),
-						'position_radius' => array( 'size' => 260 ),
-					),
-					array(
-						'user_type_title' => 'Founders & Entrepreneurs',
-						'badge_color'     => 'orange',
-						'position_angle'  => array( 'size' => 105 ),
-						'position_radius' => array( 'size' => 260 ),
+						'position_angle'  => array( 'size' => 0 ),
+						'position_radius' => array( 'size' => 310 ),
 					),
 					array(
 						'user_type_title' => 'Ecommerce Businesses',
 						'badge_color'     => 'pink',
-						'position_angle'  => array( 'size' => 315 ),
-						'position_radius' => array( 'size' => 260 ),
+						'position_angle'  => array( 'size' => 180 ),
+						'position_radius' => array( 'size' => 310 ),
 					),
 					array(
-						'user_type_title' => 'Content Writers',
-						'badge_color'     => 'green',
-						'position_angle'  => array( 'size' => 145 ),
-						'position_radius' => array( 'size' => 185 ),
-					),
-					array(
-						'user_type_title' => 'Bloggers',
+						'user_type_title' => 'Freelancers',
 						'badge_color'     => 'blue',
-						'position_angle'  => array( 'size' => 190 ),
-						'position_radius' => array( 'size' => 185 ),
+						'position_angle'  => array( 'size' => 55 ),
+						'position_radius' => array( 'size' => 310 ),
 					),
 					array(
-						'user_type_title' => 'Agencies',
-						'badge_color'     => 'brown',
-						'position_angle'  => array( 'size' => 235 ),
-						'position_radius' => array( 'size' => 185 ),
+						'user_type_title' => 'Founders & Entrepreneurs',
+						'badge_color'     => 'orange',
+						'position_angle'  => array( 'size' => 90 ),
+						'position_radius' => array( 'size' => 310 ),
 					),
 					array(
 						'user_type_title' => 'Beginners',
 						'badge_color'     => 'purple',
-						'position_angle'  => array( 'size' => 285 ),
-						'position_radius' => array( 'size' => 185 ),
+						'position_angle'  => array( 'size' => 265 ),
+						'position_radius' => array( 'size' => 210 ),
+					),
+					array(
+						'user_type_title' => 'Agencies',
+						'badge_color'     => 'brown',
+						'position_angle'  => array( 'size' => 225 ),
+						'position_radius' => array( 'size' => 210 ),
+					),
+					array(
+						'user_type_title' => 'Content Writers',
+						'badge_color'     => 'green',
+						'position_angle'  => array( 'size' => 130 ),
+						'position_radius' => array( 'size' => 210 ),
+					),
+					array(
+						'user_type_title' => 'Bloggers',
+						'badge_color'     => 'blue',
+						'position_angle'  => array( 'size' => 180 ),
+						'position_radius' => array( 'size' => 210 ),
 					),
 				),
 				'title_field' => '{{{ user_type_title }}}',
@@ -419,46 +419,46 @@ class Grap_Widget extends Widget_Base {
 		</div>
 
 		<?php
-				// Orbit dots positioned between inner and mid rings for visual balance.
+				// Orbit dots positioned around the circles for visual balance.
 				$orbit_dots = array(
 					array(
-						'angle'  => 25,
-						'radius' => 200,
-						'color'  => 'pink',
+						'angle'  => 335,
+						'radius' => 150,
+						'color'  => 'purple',
 					),
 					array(
-						'angle'  => 75,
-						'radius' => 170,
+						'angle'  => 28,
+						'radius' => 198,
 						'color'  => 'green',
 					),
 					array(
-						'angle'  => 115,
-						'radius' => 205,
-						'color'  => 'purple',
+						'angle'  => 75,
+						'radius' => 335,
+						'color'  => 'red',
 					),
 					array(
-						'angle'  => 175,
-						'radius' => 165,
-						'color'  => 'blue',
-					),
-					array(
-						'angle'  => 225,
-						'radius' => 185,
-						'color'  => 'purple',
-					),
-					array(
-						'angle'  => 265,
-						'radius' => 210,
+						'angle'  => 85,
+						'radius' => 115,
 						'color'  => 'orange',
 					),
 					array(
-						'angle'  => 310,
-						'radius' => 215,
+						'angle'  => 120,
+						'radius' => 260,
+						'color'  => 'green',
+					),
+					array(
+						'angle'  => 158,
+						'radius' => 335,
+						'color'  => 'purple',
+					),
+					array(
+						'angle'  => 230,
+						'radius' => 150,
 						'color'  => 'blue',
 					),
 					array(
-						'angle'  => 340,
-						'radius' => 185,
+						'angle'  => 275,
+						'radius' => 115,
 						'color'  => 'purple',
 					),
 				);
@@ -486,7 +486,6 @@ class Grap_Widget extends Widget_Base {
 				?>
 			<div class="user-badge <?php echo esc_attr( $color_class ); ?>"
 				style="--translate-x: <?php echo $x; ?>px; --translate-y: <?php echo $y; ?>px; transform: translate(<?php echo $x; ?>px, <?php echo $y; ?>px);">
-				<span class="badge-color-dot" aria-hidden="true"></span>
 				<div class="badge-text"><?php echo esc_html( $user_type['user_type_title'] ); ?></div>
 			</div>
 			<?php endforeach; ?>
